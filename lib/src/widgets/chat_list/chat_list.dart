@@ -85,6 +85,9 @@ class ChatList extends StatefulWidget {
   final ValueGetter<bool>? isLastPage;
 
   /// List of sliver headers to be displayed at the top of the chat list.
+  /// 
+  /// Each widget in this list must be a sliver widget that builds a
+  /// [RenderSliver] (e.g. [SliverAppBar], [SliverPersistentHeader], etc.)
   final List<Widget>? headerSlivers;
 
   /// Header widget to be displayed at the top of the chat list.
